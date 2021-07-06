@@ -36,6 +36,7 @@
         <Function Type="name:serialPort" />
       </Device>
     </DeviceCapability>
+    <DeviceCapability Name="bluetooth" />
   </Capabilities>
   <Extensions>
     <Extension Category="windows.activatableClass.inProcessServer">

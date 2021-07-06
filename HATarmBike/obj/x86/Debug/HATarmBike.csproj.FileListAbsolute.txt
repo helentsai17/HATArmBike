@@ -10,7 +10,6 @@ C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\Core\HATarm
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\HATarmBike.build.appxrecipe
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\System.Runtime.dll
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
-C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\HATarmBike.csprojAssemblyReference.cache
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\App.g.i.cs
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\App.g.cs
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\MainPage.g.i.cs
@@ -43,3 +42,4 @@ C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\qualifiers.
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424959200000000.json
+C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\HATarmBike.csprojAssemblyReference.cache

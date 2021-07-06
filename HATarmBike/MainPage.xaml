@@ -10,6 +10,17 @@
 
     <Page.Resources>
         <CollectionViewSource x:Name="DeviceListSource"/>
+        
+        <DataTemplate x:Key="ResultsListViewTemplate" x:DataType="local:BluetoothLEDeviceDisplay">
+            <Grid Margin="5">
+                <StackPanel Grid.Column="1" Margin="5">
+                    <TextBlock TextWrapping="WrapWholeWords">
+                       <Run Text="{x:Bind Name, Mode=OneWay}" FontWeight="Bold"/>  Is Paired: <Run Text="{x:Bind IsPaired, Mode=OneWay}"/>
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+        
     </Page.Resources>
 
     <Grid>
@@ -46,6 +57,25 @@
         </StackPanel>
 
 
+        <StackPanel Grid.Column="1">
+            <ScrollViewer VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto"  Height="40" Grid.Row="1" Margin="0,0,0,0"
+                      BorderThickness="1">
+                <ListView x:Name="ResultsListView"
+                      ItemTemplate="{StaticResource ResultsListViewTemplate}"
+                      ItemsSource="{x:Bind KnownDevices, Mode=OneWay}"/>
+            </ScrollViewer>
+            <TextBlock x:Name="BLEstatus"/>
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center" Orientation="Horizontal" Height="84">
+                <Button x:Name="PairButton" Content="Pair" Click="{x:Bind PairButton_Click}" Margin="0,0,0,0" />
+                <Button x:Name="ConnectButton" Content="Connect" Click="{x:Bind ConnectButton_Click}" Margin="0,0,0,0"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Name="spO2Display" HorizontalAlignment="Stretch" Height="40"/>
+                <TextBlock Name="BatteryLevelData" HorizontalAlignment="Stretch" Height="40"/>
+                <TextBlock Name="HeartReteDataDisply" HorizontalAlignment="Stretch" Height="40"/>
+            </StackPanel>
+
+        </StackPanel>
 
 
     </Grid>
