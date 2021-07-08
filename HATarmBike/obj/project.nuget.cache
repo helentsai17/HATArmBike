@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WBcOKjq4zgooTqKcZozaJ0eQzDdtlFeoJJh0S6JkWGFzw5OjwE6NxFycaaVn3WvRHyNWuv+wsNMiLzxgXjg9kw==",
+  "dgSpecHash": "F663Ya4oYd89rb1ZZ9ptG6FYyOUDnFu5I4o/zfd8KXne/tGrfmF9/7zAbopt0jjEKQ/8BEgOmGI8vkaRoFVjVw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Helen Tsai\\source\\repos\\HATarmBike\\HATarmBike\\HATarmBike.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,9 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.compiler\\2.2.9-rel-29512-01\\runtime.win10-x86.microsoft.net.native.compiler.2.2.9-rel-29512-01.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.8-rel-29512-01\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.8-rel-29512-01.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.11\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.11.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.11\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.11.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.11\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.11.nupkg.sha512",
+    "C:\\Users\\Helen Tsai\\.nuget\\packages\\winrtxamltoolkit.controls.datavisualization.uwp\\1.9.4\\winrtxamltoolkit.controls.datavisualization.uwp.1.9.4.nupkg.sha512",
+    "C:\\Users\\Helen Tsai\\.nuget\\packages\\winrtxamltoolkit.uwp\\1.9.4\\winrtxamltoolkit.uwp.1.9.4.nupkg.sha512"
   ],
   "logs": []
 }

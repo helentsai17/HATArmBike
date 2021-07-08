@@ -30,21 +30,45 @@
     <AppXManifest Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-07-06T23:05:53.145</Modified>
+      <Modified>2021-07-08T18:55:07.965</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\HATarmBike.exe">
       <PackagePath>entrypoint\HATarmBike.exe</PackagePath>
-      <Modified>2021-07-06T23:05:52.430</Modified>
+      <Modified>2021-07-08T18:55:06.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.11\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2020-11-20T13:09:24.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Helen Tsai\.nuget\packages\winrtxamltoolkit.controls.datavisualization.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization.dll">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization.dll</PackagePath>
+      <Modified>2015-10-14T22:53:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Helen Tsai\.nuget\packages\winrtxamltoolkit.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit.dll">
+      <PackagePath>WinRTXamlToolkit.dll</PackagePath>
+      <Modified>2015-10-14T22:53:46.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-02T08:52:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Helen Tsai\.nuget\packages\winrtxamltoolkit.controls.datavisualization.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml</PackagePath>
+      <Modified>2015-10-14T22:53:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Helen Tsai\.nuget\packages\winrtxamltoolkit.controls.datavisualization.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml</PackagePath>
+      <Modified>2015-10-14T22:53:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Helen Tsai\.nuget\packages\winrtxamltoolkit.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
+      <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
+      <Modified>2015-10-14T22:53:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Helen Tsai\.nuget\packages\winrtxamltoolkit.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml">
+      <PackagePath>WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml</PackagePath>
+      <Modified>2015-10-14T22:53:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -86,15 +110,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\HATarmBike.xr.xml">
       <PackagePath>HATarmBike.xr.xml</PackagePath>
-      <Modified>2021-07-06T16:25:20.300</Modified>
+      <Modified>2021-07-08T18:55:06.562</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-07-06T19:32:27.607</Modified>
+      <Modified>2021-07-08T18:55:06.627</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-07-06T23:05:52.284</Modified>
+      <Modified>2021-07-08T18:55:06.627</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -102,11 +126,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-07-06T15:45:58.275</Modified>
+      <Modified>2021-07-08T18:55:07.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\Core\HATarmBike.exe">
       <PackagePath>HATarmBike.exe</PackagePath>
-      <Modified>2021-07-06T23:05:53.137</Modified>
+      <Modified>2021-07-08T18:55:07.957</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -42,6 +42,10 @@
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.11, )"
+            },
+            "WinRTXamlToolkit.Controls.DataVisualization.UWP": {
+              "target": "Package",
+              "version": "[1.9.4, )"
             }
           },
           "imports": [
