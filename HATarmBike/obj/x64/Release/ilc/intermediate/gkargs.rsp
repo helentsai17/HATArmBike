@@ -1,0 +1,9 @@
+﻿"C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x64\Release\ilc\in\HATarmBike.exe"
+"C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x64\Release\ilc\in\WinRTXamlToolkit.dll"
+"C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x64\Release\ilc\in\WinRTXamlToolkit.Controls.DataVisualization.dll"
+/Lib:"C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x64\Release\ilc\in"
+/Lib:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.compiler\2.2.9-rel-29512-01\tools\x64\ilc\lib\Private"
+/WinMD:"C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x64\Release\ilc\in\WinMetadata\Windows.winmd"
+/VSTelemetrySessionSettings:"{\"IsOptedIn\":true,\"HostName\":\"Dev14\",\"AppInsightsInstrumentationKey\":\"f144292e-e3b2-4011-ac90-20e5c03fbce5\",\"AsimovInstrumentationKey\":\"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70\",\"AppId\":1001,\"UserId\":\"b2b8f5c8-d296-480a-bc21-175e7d3efba9\",\"Id\":\"091507d9-0451-45f9-81e3-97e049e8fba0\",\"ProcessStartTime\":637617210481271478}"
+/RdXmlPath:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\2.2.9-rel-29512-01\tools\LibraryXML"
+/RunOnlyPreDR

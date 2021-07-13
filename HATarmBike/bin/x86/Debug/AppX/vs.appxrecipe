@@ -19,24 +19,24 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>6812C75730444813F1467BCCE9F44FFF7E1A4F4C8ECD0329FE56912338FCCAEF</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>cf507b53-13b3-429a-b4cc-6107fb2af74b_1.0.0.0_x86__n2j74xz2w5nzp</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>63BCC8BB9A188B594F515434EC502BC27BEF84036AB0DE40A9B1CA1DA0DA1AA1</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>cf507b53-13b3-429a-b4cc-6107fb2af74b_1.0.1.0_x86__n2j74xz2w5nzp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>cf507b53-13b3-429a-b4cc-6107fb2af74b_n2j74xz2w5nzp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>cf507b53-13b3-429a-b4cc-6107fb2af74b</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Helen Tsai</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredVersion>1.0.1.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-07-08T23:36:13.237</Modified>
+      <Modified>2021-07-13T16:53:59.301</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\HATarmBike.exe">
       <PackagePath>entrypoint\HATarmBike.exe</PackagePath>
-      <Modified>2021-07-08T23:36:12.592</Modified>
+      <Modified>2021-07-13T16:53:58.633</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.11\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -110,15 +110,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\HATarmBike.xr.xml">
       <PackagePath>HATarmBike.xr.xml</PackagePath>
-      <Modified>2021-07-08T23:36:12.388</Modified>
+      <Modified>2021-07-09T00:11:08.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-07-08T18:55:06.627</Modified>
+      <Modified>2021-07-13T16:09:49.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-07-08T23:36:12.448</Modified>
+      <Modified>2021-07-13T16:09:49.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -126,11 +126,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-07-08T18:55:07.317</Modified>
+      <Modified>2021-07-13T16:09:49.832</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\Core\HATarmBike.exe">
       <PackagePath>HATarmBike.exe</PackagePath>
-      <Modified>2021-07-08T23:36:13.232</Modified>
+      <Modified>2021-07-13T16:53:59.296</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Release\HATarmBike_1.0.1.0_x86.msix
+SymbolPackage=C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Release\Symbols\HATarmBike_1.0.1.0_x86.appxsym

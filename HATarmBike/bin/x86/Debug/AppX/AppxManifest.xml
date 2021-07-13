@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="cf507b53-13b3-429a-b4cc-6107fb2af74b" Publisher="CN=Helen Tsai" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="cf507b53-13b3-429a-b4cc-6107fb2af74b" Publisher="CN=Helen Tsai" Version="1.0.1.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="cf507b53-13b3-429a-b4cc-6107fb2af74b" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>HATarmBike</DisplayName>
@@ -25,7 +25,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="HATarmBike.exe" EntryPoint="HATarmBike.App">
-      <uap:VisualElements DisplayName="HATarmBike" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="HATarmBike" BackgroundColor="transparent">
+      <uap:VisualElements DisplayName="HATarmBikev2" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="HATarmBike" BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>

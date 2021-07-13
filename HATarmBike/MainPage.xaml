@@ -59,7 +59,7 @@
                 </ListBox>
 
                 <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center" Orientation="Horizontal" >
-                    <TextBox x:Name="status" Text="status" TextWrapping="Wrap" IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="500px" ScrollViewer.VerticalScrollBarVisibility="Auto" BorderBrush="White"/>
+                    <TextBox x:Name="status" Text="status" TextWrapping="Wrap" IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400px" ScrollViewer.VerticalScrollBarVisibility="Auto" BorderBrush="White"/>
                     <Button Name="comPortInput" Content="Connect" Click="startConnect_Click"/>
                     <Button Name="closeDevice" Content="Disconnect" Click="closeDevice_Click"/>
                 </StackPanel>
@@ -86,7 +86,7 @@
                 </StackPanel>
                 <Grid Grid.Row="1" Grid.Column="2" >
                     <Charting:Chart x:Name="LineChart2" Margin="0" VerticalAlignment="Stretch"  HorizontalAlignment="Stretch">
-                        <Charting:LineSeries Title="Rate" ItemsSource="{x:Bind LstSource}" IndependentValuePath="Time"  DependentValuePath="Rating" IsSelectionEnabled="True" VerticalAlignment="Stretch"/>
+                        <Charting:LineSeries Title="Rate" ItemsSource="{x:Bind RPMSource}" IndependentValuePath="Time"  DependentValuePath="RPM" IsSelectionEnabled="True" VerticalAlignment="Stretch"/>
                     </Charting:Chart>
                 </Grid>
             </Grid>
@@ -105,9 +105,10 @@
                     <ListView x:Name="ResultsListView" ItemTemplate="{StaticResource ResultsListViewTemplate}" ItemsSource="{x:Bind KnownDevices, Mode=OneWay}"/>
                 </ScrollViewer>
                 <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center" Orientation="Horizontal">
-                    <TextBlock x:Name="BLEstatus" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="500px" ScrollViewer.VerticalScrollBarVisibility="Auto" />
-                    <Button x:Name="PairButton" Content="Pair" Click="PairButton_Click" Margin="0,0,0,0" />
-                    <Button x:Name="ConnectButton" Content="Connect" Click="ConnectButton_Click" Margin="0,0,0,0"/>
+                    <TextBlock x:Name="BLEstatus" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400px" ScrollViewer.VerticalScrollBarVisibility="Auto" />
+                    <Button x:Name="PairButton" Content="Pair" Click="{x:Bind PairButton_Click}" Margin="0,0,0,0" />
+                    <Button x:Name="ConnectButton" Content="Connect" Click="{x:Bind ConnectButton_Click}" Margin="0,0,0,0"/>
+                    <TextBlock Name="BatteryLevelData" HorizontalAlignment="Stretch"/>
                 </StackPanel>
             </StackPanel>
             <Grid Grid.Row="1">
@@ -118,10 +119,18 @@
 
                 <StackPanel Grid.Column="0">
                     <TextBlock Text="SPO2"/>
-                    <TextBlock Text="0" Name="spO2Display" HorizontalAlignment="Stretch" FontSize="63"/>
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock Text="0" Name="spO2Display" HorizontalAlignment="Stretch" FontSize="42"/>
+                    </StackPanel>
                     <TextBlock Text="Heart Rate"/>
-                    <TextBlock Text="0" Name="HeartReteDataDisply" HorizontalAlignment="Stretch" FontSize="63"/>
-                    <TextBlock Name="BatteryLevelData" HorizontalAlignment="Stretch" Height="40"/>
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock Text="0" Name="HeartReteDataDisply" HorizontalAlignment="Stretch" FontSize="42"/>
+                    </StackPanel>
+                    <TextBlock Text="Feeling rate"/>
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock Text="0" Name="RatingValue" HorizontalAlignment="Stretch" FontSize="42"/>
+                    </StackPanel>
+
                 </StackPanel>
                 <Grid Grid.Column="1" >
                     <Charting:Chart x:Name="LineChart" Title ="Rating value" Margin="0" VerticalAlignment="Stretch"  HorizontalAlignment="Stretch" MaxHeight="500" >

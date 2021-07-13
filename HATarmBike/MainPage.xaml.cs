@@ -63,7 +63,7 @@ namespace HATarmBike
         //heartRete value
         private GattCharacteristic HartRateCharacteristic;
         GattCharacteristic HRCTag;
-      
+
         //battery level 
         private GattCharacteristic BatteryCharacteristic;
         GattCharacteristic BLCTag;
@@ -155,7 +155,7 @@ namespace HATarmBike
             {
                 lock (this)
                 {
-                   
+
                     // Protect against race condition if the task runs after the app stopped the deviceWatcher.
                     if (sender == deviceWatcher)
                     {
@@ -199,7 +199,7 @@ namespace HATarmBike
             {
                 lock (this)
                 {
-                   
+
 
                     // Protect against race condition if the task runs after the app stopped the deviceWatcher.
                     if (sender == deviceWatcher)
@@ -213,7 +213,7 @@ namespace HATarmBike
                         }
 
                         DeviceInformation deviceInfo = FindUnknownDevices(deviceInfoUpdate.Id);
-                        if (deviceInfo != null )
+                        if (deviceInfo != null)
                         {
                             deviceInfo.Update(deviceInfoUpdate);
                             // If device has been updated with a friendly name it's no longer unknown.
@@ -291,7 +291,7 @@ namespace HATarmBike
 
             // BT_Code: Pair the currently selected device.
             DevicePairingResult result = await bleDeviceDisplay.DeviceInformation.Pairing.PairAsync();
-            
+
             isBusy = false;
         }
 
@@ -327,12 +327,12 @@ namespace HATarmBike
 
                 if (bluetoothLeDevice == null)
                 {
-                    BLEstatus.Text= SelectedBleDeviceName;
+                    BLEstatus.Text = SelectedBleDeviceName;
                 }
             }
             catch (Exception ex) when (ex.HResult == E_DEVICE_NOT_AVAILABLE)
             {
-                BLEstatus.Text="Bluetooth radio is not on.";
+                BLEstatus.Text = "Bluetooth radio is not on.";
             }
 
             if (bluetoothLeDevice != null)
@@ -417,8 +417,8 @@ namespace HATarmBike
             }
 
             Guid Oimetrychracteristic = new Guid("0AAD7EA0-0D60-11E2-8E3C-0002A5D5C51B");
-           
-            
+
+
             foreach (GattCharacteristic c in spO2Characterist)
             {
 
@@ -429,7 +429,7 @@ namespace HATarmBike
 
             }
             getSpO2ValueDisplay();
-           
+
         }
 
         #region SpO2 from continous Oximetry 
@@ -701,7 +701,7 @@ namespace HATarmBike
 
             var HeartRatevalue = HeartRateFormatValue(args.CharacteristicValue, presentationFormat);
             var HRmessage = HeartRatevalue;
-           
+
             //var Timemessage = $"At {DateTime.Now:hh:mm:ss}";
             //Timer = Timemessage;
 
@@ -823,6 +823,7 @@ namespace HATarmBike
                 serialPort.ReadTimeout = TimeSpan.FromMilliseconds(1000);
                 serialPort.BaudRate = 14400;
                 //serialPort.BaudRate = 115200;
+                //serialPort.BaudRate = 128000;
                 //serialPort.BaudRate = 9600;
                 serialPort.Parity = SerialParity.None;
                 serialPort.StopBits = SerialStopBitCount.One;
@@ -838,13 +839,13 @@ namespace HATarmBike
 
                 // Set the RcvdText field to invoke the TextChanged callback
                 // The callback launches an async Read task to wait for data
-                rcvdText.Text = "Waiting for data...";
+                rcvdText.Text = "Waiting";
 
                 // Create cancellation token object to close I/O operations when closing the device
                 ReadCancellationTokenSource = new CancellationTokenSource();
 
                 // Enable 'WRITE' button to allow sending data
-               
+
 
                 Listen();
             }
@@ -916,10 +917,14 @@ namespace HATarmBike
                     {
                         string[] data = dataReturn.Split(',');
                         rcvdText.Text = data[0];
-                        rpmText.Text = data[1];
+
+                        DateTime localDate = DateTime.Now;
+                        var now = localDate.ToString("ss");
+                        int rpm = 60000 / Int32.Parse(data[1]);
+                        rPMSource.Add(new RPMdata() { Time = now, RPM = rpm });
+                        rpmText.Text = rpm.ToString();
                     }
 
-                    
                     status.Text = "bytes read successfully!";
                 }
             }
@@ -984,10 +989,21 @@ namespace HATarmBike
             new RatingFeeling() { Time = "1-10", Rating = 1 },
         };
 
+        public ObservableCollection<RPMdata> RPMSource
+        {
+            get { return rPMSource; }
+        }
+
+        private ObservableCollection<RPMdata> rPMSource = new ObservableCollection<RPMdata>{
+            new RPMdata(){ Time="1", RPM= 60},
+            new RPMdata(){ Time="2", RPM= 60},
+        };
+
+
         private void Maximal_Click(object sender, RoutedEventArgs e)
         {
             ratingValue = 10;
-            //RatingValue.Text = "10";
+            RatingValue.Text = "10";
             DateTime localDate = DateTime.Now;
             var now = localDate.ToString("HH:mm:ss");
             lstSource.Add(new RatingFeeling() { Time = now, Rating = 10 });
@@ -997,7 +1013,7 @@ namespace HATarmBike
         private void Really_Really_hard_Button_Click(object sender, RoutedEventArgs e)
         {
             ratingValue = 9;
-            //RatingValue.Text = "9";
+            RatingValue.Text = "9";
             DateTime localDate = DateTime.Now;
             var now = localDate.ToString("HH:mm:ss");
             lstSource.Add(new RatingFeeling() { Time = now, Rating = 9 });
@@ -1007,7 +1023,7 @@ namespace HATarmBike
         private void Really_hard_Button_Click(object sender, RoutedEventArgs e)
         {
             ratingValue = 8;
-            //RatingValue.Text = "8";
+            RatingValue.Text = "8";
             DateTime localDate = DateTime.Now;
             var now = localDate.ToString("HH:mm:ss");
             lstSource.Add(new RatingFeeling() { Time = now, Rating = 8 });
@@ -1017,7 +1033,7 @@ namespace HATarmBike
         private void Challenging_hard_Button_Click(object sender, RoutedEventArgs e)
         {
             ratingValue = 7;
-            //RatingValue.Text = "7";
+            RatingValue.Text = "7";
             DateTime localDate = DateTime.Now;
             var now = localDate.ToString("HH:mm:ss");
             lstSource.Add(new RatingFeeling() { Time = now, Rating = 7 });
@@ -1027,7 +1043,7 @@ namespace HATarmBike
         private void Hard_Button_Click(object sender, RoutedEventArgs e)
         {
             ratingValue = 6;
-            //RatingValue.Text = "6";
+            RatingValue.Text = "6";
             DateTime localDate = DateTime.Now;
             var now = localDate.ToString("HH:mm:ss");
             lstSource.Add(new RatingFeeling() { Time = now, Rating = 6 });
@@ -1037,7 +1053,7 @@ namespace HATarmBike
         private void Challenging_Button_Click(object sender, RoutedEventArgs e)
         {
             ratingValue = 5;
-            //RatingValue.Text = "5";
+            RatingValue.Text = "5";
             DateTime localDate = DateTime.Now;
             var now = localDate.ToString("HH:mm:ss");
             lstSource.Add(new RatingFeeling() { Time = now, Rating = 5 });
@@ -1047,7 +1063,7 @@ namespace HATarmBike
         private void Moderate_Button_Click(object sender, RoutedEventArgs e)
         {
             ratingValue = 4;
-            //RatingValue.Text = "4";
+            RatingValue.Text = "4";
             DateTime localDate = DateTime.Now;
             var now = localDate.ToString("HH:mm:ss");
             //lstSource[0].Rating = 4;
@@ -1059,7 +1075,7 @@ namespace HATarmBike
         private void Easy_Button_Click(object sender, RoutedEventArgs e)
         {
             ratingValue = 3;
-            //RatingValue.Text = "3";
+            RatingValue.Text = "3";
             DateTime localDate = DateTime.Now;
             var now = localDate.ToString("HH:mm:ss");
             lstSource.Add(new RatingFeeling() { Time = now, Rating = 3 });
@@ -1069,7 +1085,7 @@ namespace HATarmBike
         private void Really_Easy_Button_Click_1(object sender, RoutedEventArgs e)
         {
             ratingValue = 2;
-            //RatingValue.Text = "2";
+            RatingValue.Text = "2";
             DateTime localDate = DateTime.Now;
             var now = localDate.ToString("HH:mm:ss");
             lstSource.Add(new RatingFeeling() { Time = now, Rating = 2 });
@@ -1079,7 +1095,7 @@ namespace HATarmBike
         private void Rest_Button_Click(object sender, RoutedEventArgs e)
         {
             ratingValue = 1;
-            //RatingValue.Text = "1";
+            RatingValue.Text = "1";
             DateTime localDate = DateTime.Now;
             var now = localDate.ToString("HH:mm:ss");
             lstSource.Add(new RatingFeeling() { Time = now, Rating = 1 });
@@ -1123,5 +1139,40 @@ namespace HATarmBike
         }
 
     }
+
+
+    public class RPMdata : INotifyPropertyChanged
+    {
+        private int _rpm;
+        private string _time;
+        public string Time
+        {
+            get { return _time; }
+            set
+            {
+                this._time = value;
+                NotifyPropertyChanged("time");
+            }
+        }
+        public int RPM
+        {
+
+            get { return _rpm; }
+            set
+            {
+                this._rpm = value;
+                NotifyPropertyChanged("rpm");
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged(string name)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
+
+    }
+
 
 }
