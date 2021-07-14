@@ -1,3 +1,7 @@
+C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml
+C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml
+C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml
+C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\App.xbf
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\MainPage.xbf
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\HATarmBike.xr.xml
@@ -9,7 +13,10 @@ C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\Core\AppxMa
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\Core\HATarmBike.exe
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\HATarmBike.build.appxrecipe
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\System.Runtime.dll
+C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization.dll
+C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\WinRTXamlToolkit.dll
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\HATarmBike.csprojAssemblyReference.cache
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\App.g.i.cs
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\App.g.cs
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\MainPage.g.i.cs
@@ -22,9 +29,12 @@ C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\MainPage.xb
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\HATarmBike.csproj.CoreCompileInputs.cache
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\HATarmBike.csproj.CopyComplete
+C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml
+C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\WinRTXamlToolkit.pri.xml
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\HATarmBike.exe
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\HATarmBike.pdb
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\ResourceHandlingTask.state
+C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization\en-US\WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources.resw
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\priconfig.xml
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\priconfig.xml.intermediate
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\unfiltered.layout.resfiles
@@ -42,13 +52,3 @@ C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\qualifiers.
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424959200000000.json
-C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\HATarmBike.csprojAssemblyReference.cache
-C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml
-C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml
-C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml
-C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml
-C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization.dll
-C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\WinRTXamlToolkit.dll
-C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml
-C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\WinRTXamlToolkit.pri.xml
-C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization\en-US\WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources.resw

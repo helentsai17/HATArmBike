@@ -81,7 +81,7 @@
                     </StackPanel>
                     <TextBlock Text="Time"/>
                     <StackPanel HorizontalAlignment="Center">
-                        <TextBlock Text="0" Name="timer" HorizontalAlignment="Stretch" FontSize="42"/>
+                        <TextBlock Text="0" x:Name="timecount" HorizontalAlignment="Stretch" FontSize="42"/>
                     </StackPanel>
                 </StackPanel>
                 <Grid Grid.Row="1" Grid.Column="2" >

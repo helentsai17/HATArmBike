@@ -2,27 +2,19 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading;
 using System.Threading.Tasks;
 using Windows.Devices.Bluetooth;
 using Windows.Devices.Bluetooth.GenericAttributeProfile;
 using Windows.Devices.Enumeration;
 using Windows.Devices.SerialCommunication;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.Security.Cryptography;
 using Windows.Storage.Streams;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
+
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -702,11 +694,6 @@ namespace HATarmBike
             var HeartRatevalue = HeartRateFormatValue(args.CharacteristicValue, presentationFormat);
             var HRmessage = HeartRatevalue;
 
-            //var Timemessage = $"At {DateTime.Now:hh:mm:ss}";
-            //Timer = Timemessage;
-
-            //await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => TimeNow.Text = Timemessage);
-
             await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => HeartReteDataDisply.Text = HeartRatevalue);
         }
 
@@ -801,6 +788,7 @@ namespace HATarmBike
         {
             var selection = ConnectDevices.SelectedItems;
 
+            
             if (selection.Count <= 0)
             {
                 status.Text = "Select a device and connect";
@@ -821,10 +809,7 @@ namespace HATarmBike
                 // Configure serial settings
                 serialPort.WriteTimeout = TimeSpan.FromMilliseconds(1000);
                 serialPort.ReadTimeout = TimeSpan.FromMilliseconds(1000);
-                serialPort.BaudRate = 14400;
-                //serialPort.BaudRate = 115200;
-                //serialPort.BaudRate = 128000;
-                //serialPort.BaudRate = 9600;
+                serialPort.BaudRate = 9600;
                 serialPort.Parity = SerialParity.None;
                 serialPort.StopBits = SerialStopBitCount.One;
                 serialPort.DataBits = 8;
@@ -846,8 +831,8 @@ namespace HATarmBike
 
                 // Enable 'WRITE' button to allow sending data
 
-
                 Listen();
+                //startTime();
             }
             catch (Exception ex)
             {
@@ -863,7 +848,7 @@ namespace HATarmBike
                 if (serialPort != null)
                 {
                     dataReaderObject = new DataReader(serialPort.InputStream);
-
+                    
                     // keep reading the serial input
                     while (true)
                     {
@@ -907,11 +892,12 @@ namespace HATarmBike
             {
                 // Create a task object to wait for data on the serialPort.InputStream
                 loadAsyncTask = dataReaderObject.LoadAsync(ReadBufferLength).AsTask(childCancellationTokenSource.Token);
-
+                
                 // Launch the task and wait
                 UInt32 bytesRead = await loadAsyncTask;
                 if (bytesRead > 0)
                 {
+                    status.Text = "the bytesRead is more then 0";
                     string dataReturn = dataReaderObject.ReadString(bytesRead);
                     if (dataReturn.Contains(','))
                     {
@@ -926,12 +912,48 @@ namespace HATarmBike
                     }
 
                     status.Text = "bytes read successfully!";
+                    
                 }
             }
+            
+
         }
+
+        //private int increment = 0;
+        //DispatcherTimer dt = new DispatcherTimer();
+        //private void timeStop()
+        //{
+        //    dt.Stop();
+        //    increment = 0;
+        //}
+
+        //private void startTime()
+        //{
+        //    int startinterval = 1;
+        //    dt.Interval = TimeSpan.FromSeconds(startinterval);
+        //    dt.Tick += dtTicker;
+        //    dt.Start();
+        //}
+
+        
+        //private void dtTicker(object sender, object e)
+        //{
+        //    increment++;
+        //    TimeSpan result = TimeSpan.FromSeconds(increment);
+        //    string fromTimeString = result.ToString("mm':'ss");
+
+        //    timecount.Text = fromTimeString;
+        //}
+
+        
+       
+
+
+
 
         private void CloseDevice()
         {
+            //timeStop();
             if (serialPort != null)
             {
                 serialPort.Dispose();
@@ -941,6 +963,7 @@ namespace HATarmBike
             comPortInput.IsEnabled = true;
             rcvdText.Text = "";
             listOfDevices.Clear();
+           
         }
 
 
