@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Helen Tsai\\source\\repos\\HATarmBike\\HATarmBike\\HATarmBike.csproj": {}
+    "C:\\Users\\tsait06\\source\\repos\\HATArmBike\\HATarmBike\\HATarmBike.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Helen Tsai\\source\\repos\\HATarmBike\\HATarmBike\\HATarmBike.csproj": {
+    "C:\\Users\\tsait06\\source\\repos\\HATArmBike\\HATarmBike\\HATarmBike.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Helen Tsai\\source\\repos\\HATarmBike\\HATarmBike\\HATarmBike.csproj",
+        "projectUniqueName": "C:\\Users\\tsait06\\source\\repos\\HATArmBike\\HATarmBike\\HATarmBike.csproj",
         "projectName": "HATarmBike",
-        "projectPath": "C:\\Users\\Helen Tsai\\source\\repos\\HATarmBike\\HATarmBike\\HATarmBike.csproj",
-        "packagesPath": "C:\\Users\\Helen Tsai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Helen Tsai\\source\\repos\\HATarmBike\\HATarmBike\\obj\\",
+        "projectPath": "C:\\Users\\tsait06\\source\\repos\\HATArmBike\\HATarmBike\\HATarmBike.csproj",
+        "packagesPath": "C:\\Users\\tsait06\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tsait06\\source\\repos\\HATArmBike\\HATarmBike\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Helen Tsai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tsait06\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

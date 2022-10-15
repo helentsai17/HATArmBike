@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using System.IO;
 using Windows.Devices.Bluetooth;
 using Windows.Devices.Bluetooth.GenericAttributeProfile;
 using Windows.Devices.Enumeration;
@@ -65,6 +66,11 @@ namespace HATarmBike
         GattCharacteristic SPO2CTag;
 
         private bool subscribedForNotifications = false;
+
+        string sp02message;
+        Boolean startWritingData;
+
+        List<string> spo2Datastring = new List<string>();
 
         public MainPage()
         {
@@ -443,7 +449,7 @@ namespace HATarmBike
         private async void spO2Characteristic_ValueChanged(GattCharacteristic sender, GattValueChangedEventArgs args)
         {
             var SPO2formatvalue = SPO2FormatValue(args.CharacteristicValue, presentationFormat);
-            var sp02message = SPO2formatvalue;
+            sp02message = SPO2formatvalue;
 
             await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => spO2Display.Text = sp02message);
 
@@ -694,7 +700,51 @@ namespace HATarmBike
             var HeartRatevalue = HeartRateFormatValue(args.CharacteristicValue, presentationFormat);
             var HRmessage = HeartRatevalue;
 
-            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => HeartReteDataDisply.Text = HeartRatevalue);
+            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+                DateTime timenow = DateTime.Now;
+                SPO2DataCollect.Add(new SPO2data() { Time = timenow.ToString("h:mm:ss tt"), HeartRating = Int32.Parse(HRmessage) });
+                if (startWritingData)
+                {
+                    spo2Datastring.Add("Heart Rete: "+HRmessage +" Spo2: "+ sp02message + " " + timenow.ToString("h:mm:ss tt"));
+                }
+                HeartReteDataDisply.Text = HeartRatevalue;
+                
+            });
+        }
+
+        private void LocaldataStore()
+        {
+            DateTime timenow = DateTime.Now;
+            string filePath = $"H:\\spo2\\{timenow.ToString("yyyy-MM-dd-h-mm-ss")}.txt";
+
+            spo2Datastring.Add("data write to file time: " + timenow.ToString("yyyy-MM-dd h:mm:ss"));
+
+            File.WriteAllLines(filePath, spo2Datastring);
+            spo2Datastring.Clear();
+
+        }
+
+        private void Start_Data_write_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime timenow = DateTime.Now;
+            spo2Datastring.Add("collecting data start at: " + timenow.ToString("yyyy-MM-dd h:mm:ss"));
+            startWritingData = true;
+            iscollectingdata.Text = "start collecting";
+        }
+
+        private void Stop_Data_write_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime timenow = DateTime.Now;
+            spo2Datastring.Add("collecting data end at: " + timenow.ToString("yyyy-MM-dd h:mm:ss"));
+            startWritingData = false;
+            iscollectingdata.Text = "stop collecting";
+        }
+
+        private void Write_data_to_file_Click(object sender, RoutedEventArgs e)
+        {
+            LocaldataStore();
+            startWritingData = false;
+            iscollectingdata.Text = "";
         }
 
         private string HeartRateFormatValue(IBuffer buffer, GattPresentationFormat format)
@@ -1008,8 +1058,8 @@ namespace HATarmBike
 
         private ObservableCollection<RatingFeeling> lstSource = new ObservableCollection<RatingFeeling>
         {
-            new RatingFeeling() { Time = "1-10", Rating = 10 },
-            new RatingFeeling() { Time = "1-10", Rating = 1 },
+            new RatingFeeling() { Time = "", Rating = 10 },
+            new RatingFeeling() { Time = "", Rating = 1 },
         };
 
         public ObservableCollection<RPMdata> RPMSource
@@ -1020,6 +1070,16 @@ namespace HATarmBike
         private ObservableCollection<RPMdata> rPMSource = new ObservableCollection<RPMdata>{
             new RPMdata(){ Time="1", RPM= 60},
             new RPMdata(){ Time="2", RPM= 60},
+        };
+
+
+        public ObservableCollection<SPO2data> SPO2DataCollect
+        {
+            get { return spo2datavalue; }
+        }
+
+        private ObservableCollection<SPO2data> spo2datavalue = new ObservableCollection<SPO2data>{
+             new SPO2data(){ Time="1", HeartRating = 0 },
         };
 
 
@@ -1128,6 +1188,38 @@ namespace HATarmBike
         #endregion
 
 
+    }
+
+    public class SPO2data : INotifyPropertyChanged
+    { 
+        private string _time;
+        private int _heartRate;
+      
+        public string Time
+        {
+            get { return _time; }
+            set
+            {
+                this._time = value;
+                NotifyPropertyChanged("time");
+            }
+        }
+        public int HeartRating
+        {
+
+            get { return _heartRate; }
+            set
+            {
+                this._heartRate = value;
+                NotifyPropertyChanged("heart_rate");
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void NotifyPropertyChanged(string name)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
     }
 
     public class RatingFeeling : INotifyPropertyChanged

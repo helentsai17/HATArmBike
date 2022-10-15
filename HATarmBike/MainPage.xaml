@@ -40,8 +40,8 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.Column="0" Grid.Row="0">
@@ -130,6 +130,21 @@
                     <StackPanel HorizontalAlignment="Center">
                         <TextBlock Text="0" Name="RatingValue" HorizontalAlignment="Stretch" FontSize="42"/>
                     </StackPanel>
+      
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock Text="" Name="iscollectingdata" HorizontalAlignment="Stretch" FontSize="20" Foreground="Maroon"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <Button Style="{StaticResource maxbuttom}" Background="#73C6B6" Grid.Row="1" Content="Start collecting data" Click="Start_Data_write_Click"/>
+                    </StackPanel>
+
+                    <StackPanel>
+                        <Button Style="{StaticResource maxbuttom}" Background="#85C1E9" Grid.Row="1" Content="Stop collecting data" Click="Stop_Data_write_Click"/>
+                    </StackPanel>
+
+                    <StackPanel>
+                        <Button Style="{StaticResource maxbuttom}" Background="#E59866" Grid.Row="1" Content="write data to file" Click="Write_data_to_file_Click"/>
+                    </StackPanel>
 
                 </StackPanel>
                 <Grid Grid.Column="1" >
@@ -161,7 +176,7 @@
                 <Button Style="{StaticResource maxbuttom}" Background="#E59866" Grid.Row="1" Content="Really Really Hard" Click="Really_Really_hard_Button_Click"/>
                 <Button Style="{StaticResource maxbuttom}" Background="#F0B27A" Grid.Row="2" Content="Really Hard" Click="Really_hard_Button_Click"/>
                 <Button Style="{StaticResource maxbuttom}" Background="#F8C471" Grid.Row="3" Content="Challenging hard" Click="Challenging_hard_Button_Click"/>
-                <Button Style="{StaticResource maxbuttom}" Background="#F7DC6F"  Grid.Row="4" Content="Hard" Click="Hard_Button_Click"/>
+                <Button Style="{StaticResource maxbuttom}" Background="#F7DC6F" Grid.Row="4" Content="Hard" Click="Hard_Button_Click"/>
                 <Button Style="{StaticResource maxbuttom}" Background="#F9E79F" Grid.Row="5" Content="Challenging" Click="Challenging_Button_Click"/>
                 <Button Style="{StaticResource maxbuttom}" Background="#7DCEA0" Grid.Row="6" Content="Moderate" Click="Moderate_Button_Click"/>
                 <Button Style="{StaticResource maxbuttom}" Background="#73C6B6" Grid.Row="7" Content="Easy" Click="Easy_Button_Click"/>

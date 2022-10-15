@@ -40,8 +40,8 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.Column="0" Grid.Row="0">
@@ -50,7 +50,7 @@
                 <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Top" Orientation="Vertical"   Height="auto">
-                <ListBox x:ConnectionId='32' x:Name="ConnectDevices" ScrollViewer.HorizontalScrollMode="Enabled" ItemsSource="{Binding Source={StaticResource DeviceListSource}}" HorizontalAlignment="Stretch" Height="30" >
+                <ListBox x:ConnectionId='36' x:Name="ConnectDevices" ScrollViewer.HorizontalScrollMode="Enabled" ItemsSource="{Binding Source={StaticResource DeviceListSource}}" HorizontalAlignment="Stretch" Height="30" >
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding Id}" />
@@ -59,9 +59,9 @@
                 </ListBox>
 
                 <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center" Orientation="Horizontal" >
-                    <TextBox x:ConnectionId='33' x:Name="status" Text="status" TextWrapping="Wrap" IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400px" ScrollViewer.VerticalScrollBarVisibility="Auto" BorderBrush="White"/>
-                    <Button x:ConnectionId='34' Name="comPortInput" Content="Connect"                           />
-                    <Button x:ConnectionId='35' Name="closeDevice" Content="Disconnect"                          />
+                    <TextBox x:ConnectionId='37' x:Name="status" Text="status" TextWrapping="Wrap" IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400px" ScrollViewer.VerticalScrollBarVisibility="Auto" BorderBrush="White"/>
+                    <Button x:ConnectionId='38' Name="comPortInput" Content="Connect"                           />
+                    <Button x:ConnectionId='39' Name="closeDevice" Content="Disconnect"                          />
                 </StackPanel>
             </StackPanel>
 
@@ -73,20 +73,20 @@
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock Text="Counter"/>
                     <StackPanel HorizontalAlignment="Center">
-                        <TextBlock x:ConnectionId='31' Text="0" Name="rcvdText" HorizontalAlignment="Stretch" FontSize="42"/>
+                        <TextBlock x:ConnectionId='35' Text="0" Name="rcvdText" HorizontalAlignment="Stretch" FontSize="42"/>
                     </StackPanel>
                     <TextBlock Text="Rount per minutes"/>
                     <StackPanel HorizontalAlignment="Center">
-                        <TextBlock x:ConnectionId='30' Text="0" Name="rpmText" HorizontalAlignment="Stretch" FontSize="42"/>
+                        <TextBlock x:ConnectionId='34' Text="0" Name="rpmText" HorizontalAlignment="Stretch" FontSize="42"/>
                     </StackPanel>
                     <TextBlock Text="Time"/>
                     <StackPanel HorizontalAlignment="Center">
-                        <TextBlock x:ConnectionId='29' Text="0" x:Name="timecount" HorizontalAlignment="Stretch" FontSize="42"/>
+                        <TextBlock x:ConnectionId='33' Text="0" x:Name="timecount" HorizontalAlignment="Stretch" FontSize="42"/>
                     </StackPanel>
                 </StackPanel>
                 <Grid Grid.Row="1" Grid.Column="2" >
-                    <Charting:Chart x:ConnectionId='27' x:Name="LineChart2" Margin="0" VerticalAlignment="Stretch"  HorizontalAlignment="Stretch">
-                        <Charting:LineSeries x:ConnectionId='28' Title="Rate"                                  IndependentValuePath="Time"  DependentValuePath="RPM" IsSelectionEnabled="True" VerticalAlignment="Stretch"/>
+                    <Charting:Chart x:ConnectionId='31' x:Name="LineChart2" Margin="0" VerticalAlignment="Stretch"  HorizontalAlignment="Stretch">
+                        <Charting:LineSeries x:ConnectionId='32' Title="Rate"                                  IndependentValuePath="Time"  DependentValuePath="RPM" IsSelectionEnabled="True" VerticalAlignment="Stretch"/>
                     </Charting:Chart>
                 </Grid>
             </Grid>
@@ -102,13 +102,13 @@
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="0">
                 <ScrollViewer VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto"  Height="30" Grid.Row="1" >
-                    <ListView x:ConnectionId='26' x:Name="ResultsListView" ItemTemplate="{StaticResource ResultsListViewTemplate}"                                                 />
+                    <ListView x:ConnectionId='30' x:Name="ResultsListView" ItemTemplate="{StaticResource ResultsListViewTemplate}"                                                 />
                 </ScrollViewer>
                 <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center" Orientation="Horizontal">
-                    <TextBlock x:ConnectionId='22' x:Name="BLEstatus" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400px" ScrollViewer.VerticalScrollBarVisibility="Auto" />
-                    <Button x:ConnectionId='23' x:Name="PairButton" Content="Pair"                                   Margin="0,0,0,0" />
-                    <Button x:ConnectionId='24' x:Name="ConnectButton" Content="Connect"                                      Margin="0,0,0,0"/>
-                    <TextBlock x:ConnectionId='25' Name="BatteryLevelData" HorizontalAlignment="Stretch"/>
+                    <TextBlock x:ConnectionId='26' x:Name="BLEstatus" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400px" ScrollViewer.VerticalScrollBarVisibility="Auto" />
+                    <Button x:ConnectionId='27' x:Name="PairButton" Content="Pair"                                   Margin="0,0,0,0" />
+                    <Button x:ConnectionId='28' x:Name="ConnectButton" Content="Connect"                                      Margin="0,0,0,0"/>
+                    <TextBlock x:ConnectionId='29' Name="BatteryLevelData" HorizontalAlignment="Stretch"/>
                 </StackPanel>
             </StackPanel>
             <Grid Grid.Row="1">
@@ -120,15 +120,30 @@
                 <StackPanel Grid.Column="0">
                     <TextBlock Text="SPO2"/>
                     <StackPanel HorizontalAlignment="Center">
-                        <TextBlock x:ConnectionId='21' Text="0" Name="spO2Display" HorizontalAlignment="Stretch" FontSize="42"/>
+                        <TextBlock x:ConnectionId='25' Text="0" Name="spO2Display" HorizontalAlignment="Stretch" FontSize="42"/>
                     </StackPanel>
                     <TextBlock Text="Heart Rate"/>
                     <StackPanel HorizontalAlignment="Center">
-                        <TextBlock x:ConnectionId='20' Text="0" Name="HeartReteDataDisply" HorizontalAlignment="Stretch" FontSize="42"/>
+                        <TextBlock x:ConnectionId='24' Text="0" Name="HeartReteDataDisply" HorizontalAlignment="Stretch" FontSize="42"/>
                     </StackPanel>
                     <TextBlock Text="Feeling rate"/>
                     <StackPanel HorizontalAlignment="Center">
-                        <TextBlock x:ConnectionId='19' Text="0" Name="RatingValue" HorizontalAlignment="Stretch" FontSize="42"/>
+                        <TextBlock x:ConnectionId='23' Text="0" Name="RatingValue" HorizontalAlignment="Stretch" FontSize="42"/>
+                    </StackPanel>
+      
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock x:ConnectionId='22' Text="" Name="iscollectingdata" HorizontalAlignment="Stretch" FontSize="20" Foreground="Maroon"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <Button x:ConnectionId='21' Style="{StaticResource maxbuttom}" Background="#73C6B6" Grid.Row="1" Content="Start collecting data"                               />
+                    </StackPanel>
+
+                    <StackPanel>
+                        <Button x:ConnectionId='20' Style="{StaticResource maxbuttom}" Background="#85C1E9" Grid.Row="1" Content="Stop collecting data"                              />
+                    </StackPanel>
+
+                    <StackPanel>
+                        <Button x:ConnectionId='19' Style="{StaticResource maxbuttom}" Background="#E59866" Grid.Row="1" Content="write data to file"                                 />
                     </StackPanel>
 
                 </StackPanel>
@@ -161,7 +176,7 @@
                 <Button x:ConnectionId='8' Style="{StaticResource maxbuttom}" Background="#E59866" Grid.Row="1" Content="Really Really Hard"                                        />
                 <Button x:ConnectionId='9' Style="{StaticResource maxbuttom}" Background="#F0B27A" Grid.Row="2" Content="Really Hard"                                 />
                 <Button x:ConnectionId='10' Style="{StaticResource maxbuttom}" Background="#F8C471" Grid.Row="3" Content="Challenging hard"                                      />
-                <Button x:ConnectionId='11' Style="{StaticResource maxbuttom}" Background="#F7DC6F"  Grid.Row="4" Content="Hard"                          />
+                <Button x:ConnectionId='11' Style="{StaticResource maxbuttom}" Background="#F7DC6F" Grid.Row="4" Content="Hard"                          />
                 <Button x:ConnectionId='12' Style="{StaticResource maxbuttom}" Background="#F9E79F" Grid.Row="5" Content="Challenging"                                 />
                 <Button x:ConnectionId='13' Style="{StaticResource maxbuttom}" Background="#7DCEA0" Grid.Row="6" Content="Moderate"                              />
                 <Button x:ConnectionId='14' Style="{StaticResource maxbuttom}" Background="#73C6B6" Grid.Row="7" Content="Easy"                          />

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>LAPTOP-JIPIP6KD</Machine>
-    <WindowsUser>Helen Tsai</WindowsUser>
+    <Machine>W19060DDY2NK93</Machine>
+    <WindowsUser>tsait06</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>cf507b53-13b3-429a-b4cc-6107fb2af74b</PackageIdentityName>
     <PackageIdentityPublisher>CN=Helen Tsai</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>063C1C34DE52F25330027A8700ABEA343C8F45261FF4151E409ABBF64874C45E</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>B255E10389B507A10A98948C35F2F2DF464211BAB7DC207CD1554A07A9CC700A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>cf507b53-13b3-429a-b4cc-6107fb2af74b_1.0.3.0_x86__n2j74xz2w5nzp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>cf507b53-13b3-429a-b4cc-6107fb2af74b_n2j74xz2w5nzp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>cf507b53-13b3-429a-b4cc-6107fb2af74b</RegisteredPackageID>
@@ -27,199 +27,199 @@
     <RegisteredVersion>1.0.3.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-07-14T15:34:42.753</Modified>
+      <Modified>2022-10-15T16:12:20.830</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\HATarmBike.exe">
+    <AppxPackagedFile Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\bin\x86\Debug\HATarmBike.exe">
       <PackagePath>entrypoint\HATarmBike.exe</PackagePath>
-      <Modified>2021-07-14T15:34:41.240</Modified>
+      <Modified>2022-10-15T16:12:19.726</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.11\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\tsait06\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.11\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2020-11-20T13:09:24.000</Modified>
+      <Modified>2020-11-20T09:09:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\.nuget\packages\winrtxamltoolkit.controls.datavisualization.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization.dll">
+    <AppxPackagedFile Include="C:\Users\tsait06\.nuget\packages\winrtxamltoolkit.controls.datavisualization.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization.dll">
       <PackagePath>WinRTXamlToolkit.Controls.DataVisualization.dll</PackagePath>
-      <Modified>2015-10-14T22:53:48.000</Modified>
+      <Modified>2015-10-14T18:53:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\.nuget\packages\winrtxamltoolkit.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit.dll">
+    <AppxPackagedFile Include="C:\Users\tsait06\.nuget\packages\winrtxamltoolkit.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit.dll">
       <PackagePath>WinRTXamlToolkit.dll</PackagePath>
-      <Modified>2015-10-14T22:53:46.000</Modified>
+      <Modified>2015-10-14T18:53:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
-      <Modified>2020-12-02T08:52:00.000</Modified>
+      <Modified>2020-12-02T09:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\.nuget\packages\winrtxamltoolkit.controls.datavisualization.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml">
+    <AppxPackagedFile Include="C:\Users\tsait06\.nuget\packages\winrtxamltoolkit.controls.datavisualization.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml">
       <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml</PackagePath>
-      <Modified>2015-10-14T22:53:48.000</Modified>
+      <Modified>2015-10-14T18:53:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\.nuget\packages\winrtxamltoolkit.controls.datavisualization.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml">
+    <AppxPackagedFile Include="C:\Users\tsait06\.nuget\packages\winrtxamltoolkit.controls.datavisualization.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml">
       <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.UWP.rd.xml</PackagePath>
-      <Modified>2015-10-14T22:53:48.000</Modified>
+      <Modified>2015-10-14T18:53:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\.nuget\packages\winrtxamltoolkit.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
+    <AppxPackagedFile Include="C:\Users\tsait06\.nuget\packages\winrtxamltoolkit.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
       <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
-      <Modified>2015-10-14T22:53:46.000</Modified>
+      <Modified>2015-10-14T18:53:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\.nuget\packages\winrtxamltoolkit.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml">
+    <AppxPackagedFile Include="C:\Users\tsait06\.nuget\packages\winrtxamltoolkit.uwp\1.9.4\lib\uap10.0\WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml">
       <PackagePath>WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml</PackagePath>
-      <Modified>2015-10-14T22:53:46.000</Modified>
+      <Modified>2015-10-14T18:53:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2021-07-02T19:56:10.716</Modified>
+      <Modified>2022-10-15T12:26:08.107</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2021-04-07T03:31:05.651</Modified>
+      <Modified>2022-10-15T12:26:08.095</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-07T03:31:05.654</Modified>
+      <Modified>2022-10-15T12:26:08.095</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-07T03:31:05.655</Modified>
+      <Modified>2022-10-15T12:26:08.097</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-07T03:31:05.656</Modified>
+      <Modified>2022-10-15T12:26:08.097</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-07T03:31:05.657</Modified>
+      <Modified>2022-10-15T12:26:08.097</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-07T03:31:05.658</Modified>
+      <Modified>2022-10-15T12:26:08.097</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-07T03:31:05.659</Modified>
+      <Modified>2022-10-15T12:26:08.097</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\HATarmBike.xr.xml">
+    <AppxPackagedFile Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\bin\x86\Debug\HATarmBike.xr.xml">
       <PackagePath>HATarmBike.xr.xml</PackagePath>
-      <Modified>2021-07-14T15:02:01.595</Modified>
+      <Modified>2022-10-15T16:12:19.568</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-07-14T15:34:40.993</Modified>
+      <Modified>2022-10-15T16:12:19.614</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-07-14T15:34:40.992</Modified>
+      <Modified>2022-10-15T16:12:19.613</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2020-12-02T06:52:06.000</Modified>
+      <Modified>2020-12-02T07:52:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-07-14T15:34:41.784</Modified>
+      <Modified>2022-10-15T12:26:57.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Helen Tsai\source\repos\HATarmBike\HATarmBike\bin\x86\Debug\Core\HATarmBike.exe">
+    <AppxPackagedFile Include="C:\Users\tsait06\source\repos\HATArmBike\HATarmBike\bin\x86\Debug\Core\HATarmBike.exe">
       <PackagePath>HATarmBike.exe</PackagePath>
-      <Modified>2021-07-14T15:34:42.746</Modified>
+      <Modified>2022-10-15T16:12:20.737</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\tsait06\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\tsait06\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\tsait06\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\tsait06\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\tsait06\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\tsait06\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\tsait06\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.29301.2</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\tsait06\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\tsait06\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.29301.2</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\tsait06\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\tsait06\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.29301.2</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\tsait06\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.29231.0</Version>
+      <Version>14.0.30035.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.29231.0</Version>
+      <Version>14.0.30035.0</Version>
       <Architecture>ARM64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.29231.0</Version>
+      <Version>14.0.30035.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.29231.0</Version>
+      <Version>14.0.30035.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
