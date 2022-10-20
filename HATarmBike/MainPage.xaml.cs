@@ -469,7 +469,7 @@ namespace HATarmBike
 
             await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
                 spO2Display.Text = sp02message;
-                paiValue.Text = sp02message;
+                paiValue.Text = paimessage;
 
 
             });
