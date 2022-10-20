@@ -40,7 +40,7 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
 
@@ -126,11 +126,15 @@
                     <StackPanel HorizontalAlignment="Center">
                         <TextBlock Text="0" Name="HeartReteDataDisply" HorizontalAlignment="Stretch" FontSize="42"/>
                     </StackPanel>
-                    <TextBlock Text="Feeling rate"/>
+                    <TextBlock Text="PAI"/>
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock Text="0" Name="paiValue" HorizontalAlignment="Stretch" FontSize="42"/>
+                    </StackPanel>
+                    <TextBlock Text="Rate value"/>
                     <StackPanel HorizontalAlignment="Center">
                         <TextBlock Text="0" Name="RatingValue" HorizontalAlignment="Stretch" FontSize="42"/>
                     </StackPanel>
-      
+
                     <StackPanel HorizontalAlignment="Center">
                         <TextBlock Text="" Name="iscollectingdata" HorizontalAlignment="Stretch" FontSize="20" Foreground="Maroon"/>
                     </StackPanel>

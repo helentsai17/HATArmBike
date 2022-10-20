@@ -15,6 +15,7 @@ using Windows.Storage.Streams;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.Storage;
 
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -68,9 +69,15 @@ namespace HATarmBike
         private bool subscribedForNotifications = false;
 
         string sp02message;
+        string paimessage;
         Boolean startWritingData;
 
         List<string> spo2Datastring = new List<string>();
+
+        int temponeHR;
+        int temptwoHR;
+        int temponeSpo2;
+        int temptwoSpo2;
 
         public MainPage()
         {
@@ -430,6 +437,12 @@ namespace HATarmBike
 
         }
 
+   
+
+
+
+        #endregion
+
         #region SpO2 from continous Oximetry 
 
         private async void getSpO2ValueDisplay()
@@ -451,7 +464,15 @@ namespace HATarmBike
             var SPO2formatvalue = SPO2FormatValue(args.CharacteristicValue, presentationFormat);
             sp02message = SPO2formatvalue;
 
-            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => spO2Display.Text = sp02message);
+            var PAIformatValue = PAIFormatValue(args.CharacteristicValue, presentationFormat);
+            paimessage = PAIformatValue;
+
+            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+                spO2Display.Text = sp02message;
+                paiValue.Text = sp02message;
+
+
+            });
 
         }
 
@@ -503,10 +524,6 @@ namespace HATarmBike
 
             return spo2convert.ToString();
         }
-
-        #endregion
-
-
 
         #endregion
 
@@ -705,47 +722,27 @@ namespace HATarmBike
                 SPO2DataCollect.Add(new SPO2data() { Time = timenow.ToString("h:mm:ss tt"), HeartRating = Int32.Parse(HRmessage) });
                 if (startWritingData)
                 {
-                    spo2Datastring.Add("Heart Rete: "+HRmessage +" Spo2: "+ sp02message + " " + timenow.ToString("h:mm:ss tt"));
+                    temponeHR = temptwoHR;
+                    temponeSpo2 = temptwoSpo2;
+                    if(Int32.Parse(HRmessage) != 511 && Int32.Parse(sp02message) != 127)
+                    {
+                        temptwoHR = Int32.Parse(HRmessage);
+                        temptwoSpo2 = Int32.Parse(sp02message);
+                        spo2Datastring.Add("Heart Rete: " + HRmessage + ", Spo2: " + sp02message + ", PAI: " + paimessage +", "+ timenow.ToString("h:mm:ss tt"));
+                    }
+                    else
+                    {
+                        spo2Datastring.Add("Heart Rete: " + (temponeHR + temptwoHR) / 2 + ", Spo2: " + (temponeSpo2+temptwoSpo2)/2 + ", " + timenow.ToString("h:mm:ss tt"));
+                    }
+                    
+                   
+
                 }
                 HeartReteDataDisply.Text = HeartRatevalue;
                 
             });
         }
 
-        private void LocaldataStore()
-        {
-            DateTime timenow = DateTime.Now;
-            string filePath = $"H:\\spo2\\{timenow.ToString("yyyy-MM-dd-h-mm-ss")}.txt";
-
-            spo2Datastring.Add("data write to file time: " + timenow.ToString("yyyy-MM-dd h:mm:ss"));
-
-            File.WriteAllLines(filePath, spo2Datastring);
-            spo2Datastring.Clear();
-
-        }
-
-        private void Start_Data_write_Click(object sender, RoutedEventArgs e)
-        {
-            DateTime timenow = DateTime.Now;
-            spo2Datastring.Add("collecting data start at: " + timenow.ToString("yyyy-MM-dd h:mm:ss"));
-            startWritingData = true;
-            iscollectingdata.Text = "start collecting";
-        }
-
-        private void Stop_Data_write_Click(object sender, RoutedEventArgs e)
-        {
-            DateTime timenow = DateTime.Now;
-            spo2Datastring.Add("collecting data end at: " + timenow.ToString("yyyy-MM-dd h:mm:ss"));
-            startWritingData = false;
-            iscollectingdata.Text = "stop collecting";
-        }
-
-        private void Write_data_to_file_Click(object sender, RoutedEventArgs e)
-        {
-            LocaldataStore();
-            startWritingData = false;
-            iscollectingdata.Text = "";
-        }
 
         private string HeartRateFormatValue(IBuffer buffer, GattPresentationFormat format)
         {
@@ -796,9 +793,51 @@ namespace HATarmBike
 
 
 
-        #endregion 
+        #endregion
 
 
+
+        #region  data storage in local
+
+        private void LocaldataStore()
+        {
+            DateTime timenow = DateTime.Now;
+            string filePath = $"H:\\spo2\\{timenow.ToString("yyyy-MM-dd-h-mm-ss")}.txt";
+            //string filePath = $"C:\\spo2\\{timenow.ToString("yyyy-MM-dd-h-mm-ss")}.txt";
+
+            spo2Datastring.Add("data write to file time: " + timenow.ToString("yyyy-MM-dd h:mm:ss"));
+
+            File.WriteAllLines(filePath, spo2Datastring);
+            spo2Datastring.Clear();
+
+        }
+
+        private void Start_Data_write_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime timenow = DateTime.Now;
+            spo2Datastring.Add("collecting data start at: " + timenow.ToString("yyyy-MM-dd h:mm:ss"));
+            startWritingData = true;
+            iscollectingdata.Text = "start collecting";
+        }
+
+        private void Stop_Data_write_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime timenow = DateTime.Now;
+            spo2Datastring.Add("collecting data end at: " + timenow.ToString("yyyy-MM-dd h:mm:ss"));
+            startWritingData = false;
+            iscollectingdata.Text = "stop collecting";
+        }
+
+        private void Write_data_to_file_Click(object sender, RoutedEventArgs e)
+        {
+            LocaldataStore();
+            startWritingData = false;
+            iscollectingdata.Text = "";
+        }
+
+
+
+        #endregion
 
         private async Task<bool> ClearBluetoothLEDeviceAsync()
         {
@@ -1188,7 +1227,7 @@ namespace HATarmBike
         #endregion
 
 
-    }
+        #region local storage and json data stracture
 
     public class SPO2data : INotifyPropertyChanged
     { 
@@ -1288,6 +1327,11 @@ namespace HATarmBike
         }
 
     }
+    #endregion
 
+    }
+
+
+  
 
 }
